@@ -80,6 +80,27 @@ Kuvankaappauksesta näkee TCP/IP-mallin neljä kerrosta:
 
 ## Mitäs tuli surffattua
 
+![image](https://github.com/user-attachments/assets/a93c88ab-a2ec-4f48-919a-0ac58ed22b5a)
+
+Nopealla silmäyksellä huomaa, että liikenne tapahtuu useamman verkon välillä. Kaappaus kesti kokonaisuudessaan reilut 7 sekunttia ja paketteja on yhteensä 283. 
+
+Kaksi laitetta samassa aliverkossa, joissa ne lähettävät DNS paketteja toisilleen. Laite osoitteessa x.x.x.1 on todennäköisesti reititin ja laite osoitteessa x.x.x.7 on jokin laite verkossa 
+
+![image](https://github.com/user-attachments/assets/072d78e1-cfe1-48aa-bc2f-e2aff92aed4e)
+
+Yksi laite sijaitsee osoitteessa 216.58.210.164, jonka liikenne on QUIC tyyppistä.  
+
+![image](https://github.com/user-attachments/assets/fef43f62-c350-4043-b4db-131d5a7d92df)
+
+Laitteet osoitteissa 139.162.131.217 ja 135.181.139.209 lähettää TCP ja TLS paketteja.  
+
+![image](https://github.com/user-attachments/assets/0721e7f1-16cf-46aa-831c-311acf72eff2)
+
+---
+
+##  Mitä selainta käyttäjä käyttää
+
+Lähdin tutkimaan eri paketteja. Aluksi ajattelin, että saisin selaimen selville DNS paketista 
 
 
 --- 
