@@ -153,6 +153,24 @@ Kaappasin kolme pakettia, joita aion analysoida.
 
 ![image](https://github.com/user-attachments/assets/df5c3c65-ce2f-41cc-a9fc-c54bae3af7c2)
 
+Paketit liikkuvat kahden ip osoitteen välillä, 140.82.114.25 ja 10.0.2.15. NordVPN IP Address Lookup työkalu paljastaa, että toinen IP osoite kuuluu GitHubille. 
+
+![image](https://github.com/user-attachments/assets/fd8c94a7-60d6-43ec-a6ee-93027fbb729d)
+
+Ensimmäinen paketti on TLS paketti (TLS versio 1.2) virtuaalikoneelta GitHubille, joka sisältää jotain HTTPS dataa. Tiedetään, että data on HTTPS,  
+sillä `Src Port:443` (NordVPN port-443). Paketin koko on 80 tavua, josta TCP dataa on 26 tavua. 
+
+![image](https://github.com/user-attachments/assets/9a9224a7-e9e0-4f07-bf8c-9f27187b2b26)
+
+Toinen paketti on myös TLS paketti (TLS versio 1.2) GitHubilta virtuaalikoneelle, joka sisältää kuittauksen, että ensimmäinen paketti 
+tuli perille ("This is an ACK to the segment in frame: 1") sekä myös uutta HTTPS dataa, joka lähetetään takaisin. 
+Paketin koko on 84 tavua, josta TCP dataa on 30 tavua. 
+
+![image](https://github.com/user-attachments/assets/873e2653-2d1e-4196-885b-56c4e754998b)
+
+Kolmas paketti on TCP paketti, jonka tarkoitus on vain kuitata, että paketti 2 tuli perille ("This is an ACK to segment in frame: 2").
+
+![image](https://github.com/user-attachments/assets/1c09f192-b692-419f-b355-d3b8301cc65d)
 
 --- 
 
@@ -164,4 +182,8 @@ Karvinen Tero, Wireshark - Getting Started, luettavissa: https://terokarvinen.co
 
 Tehtävässä "Mitä selainta käyttäjä käyttää" on hyödynnetty ChatGPT 4.0-kielimallia. Syötteenä käytettiin: "I have a .pcap file and I want to find out what browser was used when sending these packages. There is no http packages, only tls."
 
-https://mac.lc/address/52:54:00:2f:e1:e5
+MAC.lc, MAC Address Search, https://mac.lc
+
+NordVPN, Ip Address Lookup, https://nordvpn.com/ip-lookup/
+
+NordVPN, What is port 443? Technical guide about HTTPS port 443, luettavissa: https://nordvpn.com/blog/port-443/, luettu 31.3.2025
