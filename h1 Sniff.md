@@ -180,6 +180,8 @@ Karvinen Tero, Verkkoon tunkeutuminen ja tiedustelu, luettavissa: https://teroka
 
 Karvinen Tero, Wireshark - Getting Started, luettavissa: https://terokarvinen.com/wireshark-getting-started/, luettu 31.3.2025
 
+Karvinen Tero, Network Interface Names on Linux, luettavissa https://terokarvinen.com/network-interface-linux/, luettu 31.3.3025
+
 Tehtävässä "Mitä selainta käyttäjä käyttää" on hyödynnetty ChatGPT 4.0-kielimallia. Syötteenä käytettiin: "I have a .pcap file and I want to find out what browser was used when sending these packages. There is no http packages, only tls."
 
 MAC.lc, MAC Address Search, https://mac.lc
