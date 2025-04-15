@@ -50,26 +50,47 @@ Aallonpituus kaavalla: `aallonpituus (m) = 300 / taajuus (MHz)` > `300 / 15.245 
 
 ## rtl_443
 
+### Asennus
+
+Mennään `rtl_443/releases` GitHub sivulle ja valitaan uusi release (25.02) 
 
 ![image](https://github.com/user-attachments/assets/4bcbff6c-c1c7-4608-bb63-b1ea6bfff183)  
 
 ---
 
+Ladataan sopiva .zip paketti. Minulle `rtl_433-rtlsdr-openssl3-Linux-amd64-25.02.zip`
+
 ![image](https://github.com/user-attachments/assets/7e716c89-c974-44b4-957b-d0f468d29c6b)
 
 Asennan `atool` nimisen työkalun kommennolla `sudo apt-get -y install atool wget libssl-dev libtool libusb-1.0-0-dev librtlsdr-dev rtl-sdr libsoapysdr-dev`
 
+Asennuksen jälkeen käynnistän koneeni uudelleen. 
+
 ![image](https://github.com/user-attachments/assets/8ac1c48e-eef1-430d-b766-c54a0dfdc399)
 
-Tämän jälkeen käynnistän koneen uudelleen. 
+Puretaan ladattu .zip tiedosto komennolla `aunpack rtl*.zip`
 
-### Asennus
+![image](https://github.com/user-attachments/assets/b612b889-9718-459c-82ee-aae663607ddd)
+
+---
 
 ### Automaattinen analyysi
 
---- 
+Ladataan analysoitava tiedosto
 
-## 
+![image](https://github.com/user-attachments/assets/d92600a2-183b-4f37-855b-8b8d9200445c)
+
+Ajetaan komento `./rtl_433 -r Converted_433.92M_2000k.cs8`
+
+![image](https://github.com/user-attachments/assets/bfc90280-72df-402e-aaea-04928e9f312b)
+
+Analysointi: 
+- Monta id kenttään, kaikkien arvo sama: `8785315`
+- Kolmea eri model arvoa: `KlikAanKlikUit-Switch`, `Proove-Security` & `Nexa-Security House Code: 8785315 (House Code sama kuin id arvot)`
+  - Arvot vaihtuvat tietyssä järjestyksessä: `Klik > Proove > Nexa`
+- Joukossa liikkuu myös `Group Call`, `State` ja `Unit` arvoja, mutta en tiedä mitä nämä tarkoittavat ja mitä niistä pitäisi olla mieltä
+
+--- 
 
 ## Lähteet
 
@@ -78,3 +99,5 @@ Karvinen Tero, Verkkoon tunkeutuminen ja tiedustelu, luettavissa: https://teroka
 Hubmartin 18.1.2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs , katsottavissa https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, katsottu 15.4.2025
 
 Cornelius 4.1.2022, Decode 433.92 MHz weather station data, luettavissa https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html, luettu 15.4.2025
+
+Merbanan, rtl_443, luettavissa https://github.com/merbanan/rtl_433/releases/tag/25.02, luettu 15.4.2025
