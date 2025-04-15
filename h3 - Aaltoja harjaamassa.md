@@ -92,6 +92,38 @@ Analysointi:
 
 --- 
 
+## Too complex 16
+
+Ladataan `.complex16s` tiedosto
+
+![image](https://github.com/user-attachments/assets/e7395c02-a2f4-4cb0-a6d0-893fad85946f)
+
+Tiedoston filetype on `.complex16s`, joka pitää muuttaa `.cs8`. 
+
+- Tiedoston nimessä on tarvittavat tiedot
+  - center frequency = 433.92 Mhz
+  - Sample rate = 2 MSps
+ 
+Muokataan tiedoston nimi oikeaan muotoon
+
+![image](https://github.com/user-attachments/assets/d15bac6a-efab-4577-a953-551f3f8f2aba)
+
+Nyt voidaan käyttää rtl_433 työkalua tiedostoon
+
+![image](https://github.com/user-attachments/assets/69d93d45-56c3-4795-929d-37919a7d2a91)
+
+Tiedosto näyttää identtiseltä aiemmassa tehtävän tiedostoon.
+
+---
+
+## URH
+
+### Asennus
+
+![image](https://github.com/user-attachments/assets/daf0f39a-9ba0-4a6b-a0ba-1b33cb34203e)
+
+---
+
 ## Lähteet
 
 Karvinen Tero, Verkkoon tunkeutuminen ja tiedustelu, luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/, luettu 15.4.2025
