@@ -128,6 +128,69 @@ En päässyt eteenpäin asennuksen kanssa. Kokeilin laitailla urh Python Package
 
 Netistä ei löydy juuri mitään apua, joten jätän tämän tähän. 
 
+Tässä välissä palautin tämän raportin ja aloin vertaisarvioimaan muiden raportteja. Arvioin Hobittisen raporttia, jossa hän oli onnistunut lataamaan urh ohjelman tavalla, joten en ollut kokeillut. 
+
+Hobitti latasi urh snapd työkalun avulla: 
+
+```
+sudo apt update
+sudo apt install snapd
+sudo snap install snapd
+sudo snap install urh
+```
+![image](https://github.com/user-attachments/assets/f1c8bd68-db74-4bf6-acd1-b355faaa42f6)
+
+Tämän jälkeen hän ajoi komennon ```snap run urh```
+
+![image](https://github.com/user-attachments/assets/2bf7c5fa-e36f-4d95-9952-b5d03ce27592)
+
+![image](https://github.com/user-attachments/assets/e1a7b318-f64c-4e1a-a994-c40f89d0008a)
+
+![image](https://github.com/user-attachments/assets/f63d7d64-0efc-48fa-ab00-6d5c346a6b87)
+
+### Yleiskuva
+
+Ladataan tiedosto
+
+![image](https://github.com/user-attachments/assets/48c374de-3090-4818-9178-21c9ad1f5d02)
+
+Avataan ladattu tiedosto urh ohjelmassa
+
+![image](https://github.com/user-attachments/assets/76edd069-9997-4a39-b2a2-9eada40bfc2f)
+
+Jos painaa "information" kuvaketta aukeaa ikkuna, josta nähdään kesto
+
+![image](https://github.com/user-attachments/assets/62d06035-a344-4cc7-8e93-de8907b4a9aa)
+
+Jos painetaan "play" kuvaketta aukeaa ikkuna, josta nähdään lisää tietoa
+
+![image](https://github.com/user-attachments/assets/a35a379d-7c58-4650-b4f1-8fe0df2bc3a3)
+
+Analyysi: 
+- Taajuus: 433.92 MHz
+- Näytteenottotaajuus: 1 MSps
+- Kesto: 5.49 s
+- Näytteessä näyttää olevan kolme signaalia
+
+### Bittistä
+
+Modulaatio on ASK (Amplitude Shifting Key), ja bitit saa näkyviin painamalla "autodetect parameters"
+
+![image](https://github.com/user-attachments/assets/c04b8712-5bc3-4961-a00b-1822fea37d44)
+
+Näytteenottotaajuus: `2 MSps`
+Näytteitä: `500`
+
+Kaava: `raakabitin pituus = näytteiden määrä / näytteenottotaajuus` > `500 / 2 000 000 = 0.00025 s = 250µs`
+
+Raakabitin pituus: 250 µs
+
+Wikipediasta löytyy monta mielenkiintoista faktaa tästä, mutta oma lemppari: 
+
+`"3.33564095 microseconds – the time taken by light to travel one kilometre in a vacuum."`
+
+Eli tyhjiössä valo kulkee noin 75 kilometriä 250 mikrosekunnissa.
+
 ---
 
 ## Lähteet
@@ -141,3 +204,7 @@ Cornelius 4.1.2022, Decode 433.92 MHz weather station data, luettavissa https://
 Merbanan, rtl_443, luettavissa https://github.com/merbanan/rtl_433/releases/tag/25.02, luettu 15.4.2025
 
 Python Package Index, urh, luettavissa: https://pypi.org/project/urh/2.3.0/, luettu 16.4.2025
+
+Hobittinen, Aaltojaharjaamassa, luettavissa: https://github.com/hobittinen/verkkoon_tunkeutuminen/blob/main/h3-Aaltojaharjaamassa.md, luettu 16.4.2025
+
+Wikipedia, Microsecond, luettavissa: https://en.wikipedia.org/wiki/Microsecond, luettu 16.4.2025
