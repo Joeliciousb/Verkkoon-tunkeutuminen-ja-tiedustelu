@@ -122,6 +122,12 @@ Tiedosto näyttää identtiseltä aiemmassa tehtävän tiedostoon.
 
 ![image](https://github.com/user-attachments/assets/daf0f39a-9ba0-4a6b-a0ba-1b33cb34203e)
 
+En päässyt eteenpäin asennuksen kanssa. Kokeilin laitailla urh Python Package Indexin ohjeiden mukaan, mutta tämäkään ei toiminut.
+
+![image](https://github.com/user-attachments/assets/988bce86-7972-4891-834d-3c32420fc9ae)
+
+Netistä ei löydy juuri mitään apua, joten jätän tämän tähän. 
+
 ---
 
 ## Lähteet
@@ -133,3 +139,5 @@ Hubmartin 18.1.2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs 
 Cornelius 4.1.2022, Decode 433.92 MHz weather station data, luettavissa https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html, luettu 15.4.2025
 
 Merbanan, rtl_443, luettavissa https://github.com/merbanan/rtl_433/releases/tag/25.02, luettu 15.4.2025
+
+Python Package Index, urh, luettavissa: https://pypi.org/project/urh/2.3.0/, luettu 16.4.2025
