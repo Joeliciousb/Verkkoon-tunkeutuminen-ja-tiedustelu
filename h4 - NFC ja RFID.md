@@ -56,7 +56,7 @@ Rakenne:
 - Data
   - Dataa, `0 - 65 535 tavua`
 - Le
-  - Expected Lenght, määrittelee vastauksen koon tavuissa
+  - Expected Length, määrittelee vastauksen koon tavuissa
 
 ### R-APDU
 
@@ -73,6 +73,13 @@ Rakenne:
 
 ## RFID hakkerointi uutinen
 
+### Hardware Backdoor Discovered in RFID Cards Used in Hotels and Offices Worldwide
+
+22.8.2024 Ravie Lakshmananin kirjoittamassa artikkelissa, joka julkaistiin The Hacker News -verkkosivustolla, kerrotaan takaporttihaavoittuvuudesta, joka on löydetty MIFARE Classic FM11RF08S -korttimallista.
+Haavoittuvuuden seurauksena hyökkääjä voi murtaa kaikki avaimet, vaikka ne olisivat yksilöityjä. Kortit voidaan kloonata, mikäli niihin saadaan vain muutaman minuutin fyysinen yhteys.
+Kyseisiä kortteja käytetään laajasti hotelleissa ja toimistoissa Yhdysvalloissa, Euroopassa ja Intiassa.
+Riskinä on myös mahdollinen toimitusketjuhyökkäys, mikä tarkoittaa tilannetta, jossa kaikki kortit ovat jo valmiiksi saastuneita ennen kuin ne edes saapuvat hotelleihin.
+
 --- 
 
 ## Lähteet
@@ -80,3 +87,5 @@ Rakenne:
 Wikipedia, Smart Card Application Protocol Data Unit, luettavissa https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit, luettu 22.4.2025
 
 Wikipedia, Near-field communication, luettavissa https://fi.wikipedia.org/wiki/Near-field_communication, luettu 22.4.2025
+
+The Hacker News, Ravie Lakshmanan 22.8.2024, Hardware Backdoor Discovered in RFID Cards Used in Hotels and Offices Worldwide, luettavissa https://thehackernews.com/2024/08/hardware-backdoor-discovered-in-rfid.html, luettu 22.4.2025
