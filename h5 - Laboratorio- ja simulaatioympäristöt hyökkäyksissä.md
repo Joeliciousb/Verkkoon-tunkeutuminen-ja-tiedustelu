@@ -34,4 +34,71 @@ Mininetin voi käynnistää komennolla `sudo mn`. Testaan vielä pingata mininet
 
 Kaikki näyttää toimivan. 
 
-### 
+### Tehtävät
+
+#### 01 - Network-Security-Lab
+
+#### Task 1
+
+Aluksi piti kloonata `https://github.com/ssam246/Network-Security-Lab` virtuaalikoneelle komennolla `git clone https://github.com/ssam246/Network-Security-Lab`, jonka jälkeen siirrytään uuteen hakemistoon `cd Network-Security-Lab/scripts`. 
+
+![image](https://github.com/user-attachments/assets/c635b502-96e9-4e24-969d-9cd37d9daaef)
+
+Harjoituksen voi aloittaa ajamalla komennon `sudo python hub_topo.py`
+
+![image](https://github.com/user-attachments/assets/37759e32-7895-4b50-81e1-cc015a5946f1)
+
+Avataan uudet terminaalinäkymät eri hosteille. Komennon `xterm h1 h2` pitäisi toimia. 
+
+![image](https://github.com/user-attachments/assets/85eae00c-5fd7-4e12-9ede-e47c1a09f070)
+
+Tehtävänannon mukaan: 
+
+![image](https://github.com/user-attachments/assets/cb361568-ec16-49f7-9775-34b48dd457ab)
+
+![image](https://github.com/user-attachments/assets/952b1200-28c7-4eef-b03b-8e2bd4631a45)
+
+#### Task 2
+
+Tehtävänanto
+
+![image](https://github.com/user-attachments/assets/694a50b5-adcc-410c-9fb1-0ee69995a56b)
+
+![image](https://github.com/user-attachments/assets/a8a13a62-2dbe-4a56-9a76-a198f4359aac)
+
+#### Task 3
+
+Tehtävänanto 
+
+![image](https://github.com/user-attachments/assets/b56ababb-db45-4649-b064-d1d888612673)
+
+![image](https://github.com/user-attachments/assets/948a575c-2eb3-4828-8f48-180a50919ac0)
+
+---
+
+### 02 - DDoS Simulation in a Software Defined Network
+
+Ajetaan komennot
+```
+git clone https://github.com/santhisenan/SDN_DDoS_Simulation.git
+cd SDN_DDoS_SImulation
+```
+
+![image](https://github.com/user-attachments/assets/d1a58792-307d-4155-a6a0-662a421c8002)
+
+Tämän jälkeen ajetaan `sudo python tree_topology.py`
+
+![image](https://github.com/user-attachments/assets/1edb4f80-6557-4745-8f38-08380925f0d2)
+
+---
+
+## evilginx2
+
+
+## Lähteet
+
+Kurssin moodle-sivut
+
+GitHub, ssam246, Network-Security-Lab, luettavissa https://github.com/ssam246/Network-Security-Lab, luettu 5.5.2025
+
+GitHub, santhisenan, DDoS Simulation in a Software Defined Network, luettavissa https://github.com/santhisenan/SDN_DDoS_Simulation, luettu 5.5.2025
