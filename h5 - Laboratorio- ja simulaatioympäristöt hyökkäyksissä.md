@@ -94,6 +94,35 @@ Tämän jälkeen ajetaan `sudo python tree_topology.py`
 
 ## evilginx2
 
+En alkanut asentelemaan ainakaan vielä, mutta evilginx2 on man-in-the-middle hyökkäystyökalu, jota käytetään phishing-hyökkäyksiin. 
+
+- reverse proxy
+- uhri luulee kirjautuneensa oikealle sivulle, mutta evilginx2 kaappaa tiedot välistä ja varastaa session cookien
+
+## TCP SYN-flood
+
+Loin mininet-verkon komennolla `sudo mn --topo=singe,3`
+- 3 hostia
+  - h1 hyökkää h2 http palvelinta
+  - h2 pyörittää http palvelinta
+  - h3 pingaa h2, jotta nähdään pysyykö h2 mukana
+- 1 switch
+
+Tämän jälkeen avasin jokaiselle hostille oman xterm ikkunan. host1 xterm ikkunassa asensin hping3 työkalun, jonka avulla suoritan hyökkäyksen. `sudo apt-get install hping3`
+
+host2 xterm ikkunnassa käynnistin http palvelimen portissa 80: `python3 -m http.server 80`
+
+host3 xterm ikkunassa aloin pingata h2. `ping h2`
+
+![image](https://github.com/user-attachments/assets/9a7dd466-0f43-4614-a130-b1a9272cfd1f)
+
+Tässä kuvassa hyökkäys on jo käynnissä ja nähdään, miten h3 > h2 ping vastausaika heittelee
+
+![image](https://github.com/user-attachments/assets/39cd3917-0991-4ca3-8ae9-0c146848008b)
+
+`26.9 ms` oli suurin viive tässä kokeilussa
+
+![image](https://github.com/user-attachments/assets/530f0693-1c5c-4346-b811-2e3ed1a94111)
 
 ## Lähteet
 
@@ -102,3 +131,8 @@ Kurssin moodle-sivut
 GitHub, ssam246, Network-Security-Lab, luettavissa https://github.com/ssam246/Network-Security-Lab, luettu 5.5.2025
 
 GitHub, santhisenan, DDoS Simulation in a Software Defined Network, luettavissa https://github.com/santhisenan/SDN_DDoS_Simulation, luettu 5.5.2025
+
+GitHub, kgretzky, evilginx2, luettavissa https://github.com/kgretzky/evilginx2, luettu 6.5.2025
+
+Firewall.cx, How to Perform TCP SYN Flood DoS Attack & Detect it with Wireshark - Kali Linux hping3, luettavissa https://www.firewall.cx/tools-tips-reviews/network-protocol-analyzers/performing-tcp-syn-flood-attack-and-detecting-it-with-wireshark.html#how-to-perform-syn-flood-attack, luettu 6.5.2025
+
