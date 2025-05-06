@@ -34,7 +34,7 @@ Mininetin voi käynnistää komennolla `sudo mn`. Testaan vielä pingata mininet
 
 Kaikki näyttää toimivan. 
 
-### Tehtävät
+### Harjoitustehtävät
 
 #### 01 - Network-Security-Lab
 
@@ -94,7 +94,7 @@ Tämän jälkeen ajetaan `sudo python tree_topology.py`
 
 ## evilginx2
 
-En alkanut asentelemaan ainakaan vielä, mutta evilginx2 on man-in-the-middle hyökkäystyökalu, jota käytetään phishing-hyökkäyksiin. 
+En alkanut asentelemaan ainakaan vielä laiska kun olen, mutta evilginx2 on man-in-the-middle hyökkäystyökalu, jota käytetään phishing-hyökkäyksiin. 
 
 - reverse proxy
 - uhri luulee kirjautuneensa oikealle sivulle, mutta evilginx2 kaappaa tiedot välistä ja varastaa session cookien
