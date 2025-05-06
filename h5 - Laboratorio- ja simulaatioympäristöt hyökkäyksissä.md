@@ -112,13 +112,19 @@ Tämän jälkeen avasin jokaiselle hostille oman xterm ikkunan. host1 xterm ikku
 
 host2 xterm ikkunnassa käynnistin http palvelimen portissa 80: `python3 -m http.server 80`
 
+Avaan toisen host2 xterm ikkunan, jossa ajan komennon `tcpdump -i any port 80 and tcp[13] == 2`, jotta nähdään paketteja
+
+![image](https://github.com/user-attachments/assets/850f5cbd-7e8f-4881-94d4-4360933a8677)
+
 host3 xterm ikkunassa aloin pingata h2. `ping h2`
+
+host1 aloittaa hyökkäyksen ajamalla komennon `hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source h2`
 
 ![image](https://github.com/user-attachments/assets/9a7dd466-0f43-4614-a130-b1a9272cfd1f)
 
-Tässä kuvassa hyökkäys on jo käynnissä ja nähdään, miten h3 > h2 ping vastausaika heittelee
+![image](https://github.com/user-attachments/assets/65b5d47f-7fe0-4f11-9703-39aa39bd4438)
 
-![image](https://github.com/user-attachments/assets/39cd3917-0991-4ca3-8ae9-0c146848008b)
+Kuva ei tee kunniaa, mutta h2 ikkuna liikkuu vauhdilla, joten liikennettä on paljon
 
 `26.9 ms` oli suurin viive tässä kokeilussa
 
